@@ -20,9 +20,15 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 class VigenereCipheringMachine {
-  encrypt() {
+  encrypt(value, value2) {
+    if (value === undefined || value === null || value2 === undefined || value2 === null) {
+      throw new Error('Incorrect arguments!')
+    }
   }
-  decrypt() {
+  decrypt(value, value2) {
+    if (value === undefined || value === null || value2 === undefined || value2 === null) {
+      throw new Error('Incorrect arguments!')
+    }
   }
 }
 
